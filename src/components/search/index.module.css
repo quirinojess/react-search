@@ -1,0 +1,44 @@
+/* Search component style */
+
+@keyframes box {
+ 0% {
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+ }
+
+ 100% {
+  box-shadow: -10px 10px 10px -10px rgba(0, 0, 0, 0.35);
+ }
+}
+
+.search {
+ background: var(--white);
+ width: 100%;
+ color: grey;
+ padding: 5px;
+ margin: 15px 0;
+ font-size: 14px;
+ display: flex;
+ align-items: center;
+ animation: box 1s ease 0s 1 normal forwards;
+}
+
+.search svg {
+ width: 10px;
+ margin: 10px;
+ color: var(--grey);
+ fill: var(--grey);
+}
+
+.search input {
+ background: var(white);
+ border: 0;
+ width: 93%;
+ color: var(--grey-deep);
+ transition: 1s ease;
+}
+
+.search input:focus {
+ border: 0;
+ outline: none;
+ color: var(--grey-light);
+}
